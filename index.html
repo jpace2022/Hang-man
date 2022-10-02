@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Hang Man</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body> 
-    <header class="page-header">Lets Play a Game!</header>
-    <div class="container">
-        <h1 class= "text-center">Hang Man</h1>
-        <div class="flaot-right">Wrong guess: <span id="mistakes">0</span></div>
-        <div class="text-center">
-            <img id="Hangman pic" src="https://miro.medium.com/max/600/0*6WFhG2qCe5dPH1Fz." alt="hangman">
-            <p>Guess the word!</p>
-            <p id="word focus"> The guessed word goes here</p>
-            <button class="Enter"onclick="reset()">reset</button>
-        </div>
-    </div>
+        <h1>Hang Man</h1>
+        <button id="start-game">Start Game</button>
+        <Main>
+            <section id="game">
+                <h2 id="word-display">___c__</h2>
+            </section>
+            <aside id="timer-box">
+                <section id="score">
+                    <h3>wins: <span id="wins"></span></h3>
+                    <h3>loses: <span id="losses"></span></h3>
+                    <button id="reset-scores">reset</button>
+                </section>
+                <section id="time">
+                    <h3>time left: <span id="time-left"></span></h3>
+                </section>
+            </aside>
+        </Main>
 
     <script src="./assets/js/script.js"></script>
 </body>
